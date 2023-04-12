@@ -9,6 +9,7 @@ html {
   --subtitle-text: #8e8f99;
   --accent: #e7e9fc;
   --light: #f4f4fd;
+  --icon-bg: #afb1b8;
 }
 body {
   background-color: #ffffff;
@@ -226,7 +227,7 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.jpg);
+    url(../images/people-office\ .jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -479,7 +480,7 @@ a {
   border-radius: 4px;
   fill: #8e8f99;
 
-  color: var(--subtitle-text);
+  color: var(--icon-bg);
 }
 
 .customer-icon {
@@ -546,6 +547,12 @@ a {
   background-color: #4d5ae5;
   border-radius: 50%;
 }
+.social-media-list-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+}
 
 .social-media-link-footer:hover,
 .social-media-link-footer:focus {
@@ -584,10 +591,21 @@ background-color: #4D5AE5;
 
   margin-bottom: 72px;
 }
-/*.filter-btn li:not(:last-child) {
-  margin-right: 24px;
-}*/
+.button-portfolio:hover,
+.button-portfolio:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .work-title {
   font-weight: 500;
   font-size: 20px;
