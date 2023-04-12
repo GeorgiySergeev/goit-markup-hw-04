@@ -50,6 +50,9 @@ ul {
   margin-right: auto;
   width: 1158px;
 }
+a {
+  cursor: pointer;
+}
 
 /*===================================BUTTONS====================================*/
 
@@ -108,6 +111,9 @@ ul {
 .header {
   /*background-color: #31d0aa;*/
   border-bottom: 1px solid #e7e9fc;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header-cont {
   display: flex;
@@ -214,11 +220,26 @@ ul {
 /* ============================Section 1 Hero==========================*/
 
 .hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: #2e2f42;
+
+  max-width: 1440px;
+  height: 600px;
+
+  margin: 0 auto;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
 }
+
 .hero-title {
   padding-bottom: 48px;
   font-weight: 700;
@@ -238,6 +259,20 @@ ul {
 }
 
 /* ===================================Section-2 Features===========================*/
+.svg-features {
+  width: 60px;
+  height: 64px;
+}
+.icon-container {
+  background: #f4f4fd;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+
+  padding: 24px 102px;
+  margin-bottom: 8px;
+}
+
 .features {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -388,7 +423,92 @@ ul {
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
-/* ============================Footer================================*/
+.team-icon-cont {
+  margin-top: 8px;
+}
+.team-icon {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
+}
+
+.team-icon-list {
+  display: flex;
+  gap: 24px;
+  max-height: 40px;
+}
+
+.team-icon-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background-color: #404bbf;
+}
+/*======================Customers=====================================*/
+.customer-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+}
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customer-list {
+  display: flex;
+  gap: 24px;
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer-link {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  fill: #8e8f99;
+}
+
+/*.customer-icon:hover,
+.customer-icon:focus {
+  border-color: #404bbf;
+}*/
+
+.customer-icon-item {
+  color: #8e8f99;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  fill: #404bbf;
+  border-color: #404bbf;
+}
+
+/*============Footer================================*/
 
 /*.logo*/
 .footer-logo {
@@ -410,6 +530,36 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+.footer-container {
+  display: flex;
+  gap: 120px;
+  align-items: baseline;
+}
+.footer-text-right {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+
+  color: #ffffff;
+}
+
+.social-link-footer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+}
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: #31d0aa;
 }
 /*====================================Portfolio=============================*/
 
